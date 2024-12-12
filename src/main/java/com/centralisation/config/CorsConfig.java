@@ -20,7 +20,7 @@ public class CorsConfig {
             public void addCorsMappings(@NonNull CorsRegistry registry) {
                 LOGGER.info("Début de la configuration des règles CORS...");
                 registry.addMapping("/**")
-                        .allowedOrigins("http://localhost:4200", "http://host.docker.internal:9090")
+                        .allowedOrigins("http://localhost:4200")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
                         .allowCredentials(true);
