@@ -20,12 +20,12 @@ public class CorsConfig {
             public void addCorsMappings(@NonNull CorsRegistry registry) {
                 LOGGER.info("Début de la configuration des règles CORS...");
                 registry.addMapping("/**")
-                        .allowedOrigins("http://localhost:4200")
+                        .allowedOrigins("http://localhost:3000")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
                         .allowCredentials(true);
                 LOGGER.info("CORS configuré avec succès :");
-                LOGGER.info(" - Origines autorisées : http://localhost:4200");
+                LOGGER.info(" - Origines autorisées : http://localhost:3000");
                 LOGGER.info(" - Méthodes autorisées : GET, POST, PUT, DELETE, OPTIONS");
                 LOGGER.info(" - En-têtes autorisés : Tous (*)");
                 LOGGER.info(" - Autorisation des credentials : Activé");
